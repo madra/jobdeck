@@ -1,0 +1,22 @@
+{
+  "name": "Jobdeck",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [ "tabs", "http://*/", "https://*/" ],
+  "update_url": "http://clients2.google.com/service/update2/crx",
+     "background": {
+      "scripts": [ "scripts/background.js" ]
+   },
+   "description": "Fetch Freelance Jobs",
+   "icons": {
+      "128": "images/super_man.ico"
+   },
+    "app": {
+      "launch": {
+         "local_path": "templates/default.html"
+      }
+   },
+   "background": {
+      "page": "templates/background.html"
+   }
+}
